@@ -1,42 +1,12 @@
-  
+# React + Vite
 
-# CPU-Scheduling-Simulator
-**CPU-Scheduling-Simulator** is a React web app (HTML, CSS/TailwindCSS, JavaScript) designed for CSE undergraduates studying Operating Systems. It helps visualize CPU scheduling by generating Gantt charts, detailed result tables (showing process arrival, burst, start, end, waiting, and turnaround times), and calculating average waiting and turnaround times to aid learning in OS theory and lab courses.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-  
+Currently, two official plugins are available:
 
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
+## Expanding the ESLint configuration
 
-## Target Audience
-**CPU-Scheduling-Simulator** application is specifically designed for CSE undergraduate students who are studying Operating Systems theory and lab courses, helping them better understand CPU scheduling concepts through interactive visualization and practical simulation tools.
-
-  
-  
-
-## Tech Stack
-<table>
-	 <thead> 
-		 <tr> 
-			 <th>Technology</th> 
-			 <th>Tools</th> 
-		 </tr> 
-	 </thead> 
-	 <tbody> 
-		 <tr> 
-			 <td>Frontend</td> 
-			 <td>HTML, TailwindCSS, JavaScript, React</td>   
-		 </tr>  
-	 </tbody> 
- </table>
-  
-
-
-## Project Features
-<ul>
-	<li>Algorithm Selection</li>
-	<li>Gantt Chart</li>
-	<li>Result Table</li>
-	<li>Average Waiting and Turn Around Time</li>
-</ul>
-
-----------
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
