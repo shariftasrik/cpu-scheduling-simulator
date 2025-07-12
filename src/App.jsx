@@ -8,11 +8,13 @@ import ResultsTable from "./components/ResultsTable";
 import TimeLineVslzn from "./components/TimeLineVslzn";
 
 function App() {
-  const [processes, setProcesses] = useState([
+
+  const initialProcesses = [
     { id: 1, name: "P1", arrivalTime: 0, cpuTime: 0, priority: 0 },
     { id: 2, name: "P2", arrivalTime: 0, cpuTime: 0, priority: 0 },
     { id: 3, name: "P3", arrivalTime: 0, cpuTime: 0, priority: 0 },
-  ]);
+  ]
+  const [processes, setProcesses] = useState(initialProcesses);
 
   const [algorithm, setAlgorithm] = useState("fcfs");
   const [quantum, setQuantum] = useState(2);
@@ -39,15 +41,15 @@ function App() {
   };
 
   const updateProcess = (id, field, value) => {
-    const numeric = value.replace(/^0+(?=\d)/, '');
     setProcesses(
       processes.map((p) =>
-        p.id === id ? { ...p, [field]: parseInt(numeric) || 0 } : p
+        p.id === id ? { ...p, [field]: parseInt(value) || 0 } : p
       )
     );
   };
 
   const reset = () => {
+    setProcesses(initialProcesses);
     setResults(null);
     setIsRunning(false);
     setTimeline([]);

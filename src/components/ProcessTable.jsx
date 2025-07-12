@@ -1,10 +1,4 @@
-export default function ProcessTable({
-  processes,
-  algorithm,
-  onAddProcess,
-  onRemoveProcess,
-  onUpdateProcess,
-}) {
+export default function ProcessTable({processes,algorithm,onAddProcess,onRemoveProcess,  onUpdateProcess,}) {
   return (
     <div className="mb-6">
       <div className="flex items-center justify-between mb-4">
