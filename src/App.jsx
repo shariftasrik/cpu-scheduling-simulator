@@ -5,7 +5,7 @@ import AlgoSelector from './components/AlgoSelector';
 import ProcessTable from './components/ProcessTable';
 import ResultsTable from './components/ResultsTable';
 import Footer from './components/Footer';
-import TimeLineVslzn from './components/TimelineVslzn';
+import TimeLineVslzn from './components/TimeLineVslzn';
 
 
 
