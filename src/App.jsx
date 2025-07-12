@@ -39,9 +39,10 @@ function App() {
   };
 
   const updateProcess = (id, field, value) => {
+    const cleanValue = value.replace(/^0+/, '') || '0';
     setProcesses(
       processes.map((p) =>
-        p.id === id ? { ...p, [field]: parseInt(value) || 0 } : p
+        p.id === id ? { ...p, [field]: parseInt(cleanValue, 10) } : p
       )
     );
   };
