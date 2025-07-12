@@ -31,8 +31,8 @@ const [processes, setProcesses] = useState([
         id: newId,
         name: `P${newId}`,
         arrivalTime: 0,
-        cpuTime: 1,
-        priority: 1
+        cpuTime: 0,
+        priority: 0
       }
     ]);
   };
