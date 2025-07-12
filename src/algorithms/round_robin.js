@@ -1,5 +1,5 @@
 export default function round_robin(processes, quantum) {
-  const procs = processes.map((p) => ({ ...p, remainingTime: p.burstTime }));
+  const procs = processes.map((p) => ({ ...p, remainingTime: p.cpuTime }));
   const queue = [];
   let currentTime = 0;
   const timeline = [];
@@ -81,7 +81,7 @@ export default function round_robin(processes, quantum) {
         startTime: processStartTimes[current.id],
         endTime: currentTime,
         turnaroundTime: currentTime - current.arrivalTime,
-        waitingTime: currentTime - current.arrivalTime - current.burstTime,
+        waitingTime: currentTime - current.arrivalTime - current.cpuTime,
       });
     }
   }

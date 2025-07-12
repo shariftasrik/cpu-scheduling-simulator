@@ -54,7 +54,7 @@ export default function ResultsTable({ results }) {
                   {result.name}
                 </td>
                 <td className="px-4 py-3">{result.arrivalTime}</td>
-                <td className="px-4 py-3">{result.burstTime}</td>
+                <td className="px-4 py-3">{result.cpuTime}</td>
                 <td className="px-4 py-3">{result.startTime}</td>
                 <td className="px-4 py-3">{result.endTime}</td>
                 <td className="px-4 py-3 text-blue-600 font-medium">

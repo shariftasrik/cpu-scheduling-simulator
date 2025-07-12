@@ -33,14 +33,14 @@ export default function priority(processes) {
     );
 
     const startTime = currentTime;
-    const endTime = startTime + highest.burstTime;
+    const endTime = startTime + highest.cpuTime;
 
     timeline.push({
       processId: highest.id,
       processName: highest.name,
       start: startTime,
       end: endTime,
-      duration: highest.burstTime,
+      duration: highest.cpuTime,
     });
 
     processResults.push({

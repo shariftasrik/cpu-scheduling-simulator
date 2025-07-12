@@ -10,9 +10,9 @@ import TimeLineVslzn from "./components/TimeLineVslzn";
 function App() {
 
   const initialProcesses = [
-    { id: 1, name: "P1", arrivalTime: 0, cpuTime: 0, priority: 0 },
-    { id: 2, name: "P2", arrivalTime: 0, cpuTime: 0, priority: 0 },
-    { id: 3, name: "P3", arrivalTime: 0, cpuTime: 0, priority: 0 },
+    { id: 1, name: "P1", arrivalTime: 0, cpuTime: 1, priority: 1 },
+    { id: 2, name: "P2", arrivalTime: 0, cpuTime: 1, priority: 1 },
+    { id: 3, name: "P3", arrivalTime: 0, cpuTime: 1, priority: 1 },
   ]
   const [processes, setProcesses] = useState(initialProcesses);
 
@@ -30,8 +30,8 @@ function App() {
         id: newId,
         name: `P${newId}`,
         arrivalTime: 0,
-        cpuTime: 0,
-        priority: 0,
+        cpuTime: 1,
+        priority: 1,
       },
     ]);
   };

@@ -18,14 +18,14 @@ export default function fcfs(processes) {
     }
 
     const startTime = currentTime;
-    const endTime = startTime + process.burstTime;
+    const endTime = startTime + process.cpuTime;
 
     timeline.push({
       processId: process.id,
       processName: process.name,
       start: startTime,
       end: endTime,
-      duration: process.burstTime,
+      duration: process.cpuTime,
     });
 
     processResults.push({

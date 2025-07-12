@@ -27,18 +27,18 @@ export default function sjf(processes) {
     }
 
     const shortest = available.reduce((min, p) =>
-      p.burstTime < min.burstTime ? p : min
+      p.cpuTime < min.cpuTime ? p : min
     );
 
     const startTime = currentTime;
-    const endTime = startTime + shortest.burstTime;
+    const endTime = startTime + shortest.cpuTime;
 
     timeline.push({
       processId: shortest.id,
       processName: shortest.name,
       start: startTime,
       end: endTime,
-      duration: shortest.burstTime,
+      duration: shortest.cpuTime,
     });
 
     processResults.push({

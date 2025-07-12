@@ -57,9 +57,9 @@ export default function ProcessTable({processes,algorithm,onAddProcess,onRemoveP
                 <td className="px-4 py-3">
                   <input
                     type="number"
-                    value={process.burstTime}
+                    value={process.cpuTime}
                     onChange={(e) =>
-                      onUpdateProcess(process.id, "burstTime", e.target.value)
+                      onUpdateProcess(process.id, "cpuTime", e.target.value)
                     }
                     min="1"
                     className="w-20 p-2 border border-gray-300 rounded focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
