@@ -9,7 +9,7 @@ export default function Footer() {
         <p>Tasrik © {year} </p>
         <div className="flex space-x-4">
           <a
-            href="linkedin.com/in/nimur-rahman-sharif-946108349"
+            href="https://www.linkedin.com/in/nimur-rahman-sharif-946108349/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-blue-600 transition-colors"
